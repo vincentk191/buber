@@ -1,7 +1,7 @@
-h1 {
+#homeLogo h1 {
    position: absolute;
     top: 330px;
-    left: 45%;
+    left: 44.5%;
     width: 200px;
     height: 50px;
 }
@@ -12,14 +12,10 @@ li{
 	float: right;
 }
 
-hr{
-	clear: right;
-}
-
 .navigation0 {
 	position: absolute;
     top: 100px;
-    left: 150px;
+    left: 200px;
     width: 200px;
     height: 50px;
 }
@@ -40,18 +36,79 @@ hr{
     height: 50px;
 }
 
-body {padding: 20px;
-	margin-top: 0;
+body {
+  background: url() no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin-left: 100;
+  padding-left: 40;
+  color: black;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li {
+	float: right;
+	width: 200px;
+	height: 50px;
+	background-color: white;
+	opacity: .8;
+  color: black;
+
+
+}
+
+
+
+li a {
+    display: inline-grid;
+    text-align: center;
+    color: black;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+li {
+    float:left;
+}
+
+
+.active {
+    background-color: white;
+       color: white;
+       padding: 0 0 0 0;
 }
 
 #map {
 	height: 500px;
 	width: 0%;
 }
+
 img {
 	position: absolute;
     top: 260px;
-    left: 45%;
-    width: 200px;
-    height: 50px;
+    left: 48%;
+    width: 100px;
+    height: 100px;
 }
