@@ -1,31 +1,32 @@
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#homeLogo h1 {
    position: absolute;
     top: 330px;
-    left: 45%;
+    left: 44.5%;
     width: 200px;
     height: 50px;
 }
 
 li{
-	display: inline;
-	margin-right: 20px;
-	float: right;
-}
-
-hr{
-	clear: right;
+    display: inline;
+    margin-right: 20px;
+    float: right;
 }
 
 .navigation0 {
-	position: absolute;
+    position: absolute;
     top: 100px;
-    left: 150px;
+    left: 200px;
     width: 200px;
     height: 50px;
 }
 
 .navigation1{
-	position: absolute;
+    position: absolute;
     top: 200px;
     left: 900px;
     width: 200px;
@@ -33,25 +34,187 @@ hr{
 }
 
 .navigation2 {
-	position: absolute;
+    position: absolute;
     bottom: 125px;
     left: 400px;
     width: 200px;
     height: 50px;
 }
 
-body {padding: 20px;
-	margin-top: 0;
+body {
+  background: url(http://www.cafesolgj.com/wp-content/uploads/2013/09/bike-delivery.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin-left: 100;
+  padding-left: 40;
+  color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li {
+    float: right;
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    opacity: .8;
+    color: black;
+    text-align: center;
+}
+
+li a {
+    display: inline-grid;
+    text-align: center;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+li {
+    float:left;
+}
+
+
+.active {
+    background-color: white;
+       color: white;
+       padding: 0 0 0 0;
 }
 
 #map {
-	height: 500px;
-	width: 0%;
+    height: 300px;
+    width: 50%;
+    margin-left: 50%;
 }
-img {
-	position: absolute;
+
+/*img {
+    position: absolute;
     top: 260px;
-    left: 45%;
-    width: 200px;
-    height: 50px;
+    left: 48%;
+    width: 50px;
+    height: 100px;
+    }*/
+
+
+/*About us*/
+#aboutUs {
+    background:rgba(100,100,100,0.9);;
+    box-shadow: 10px 8px 8px -6px;
+    width: 160px; height: 200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30%;
 }
+
+#profileNav {
+    padding-top: 10px;
+    position: relative;
+}
+
+#profileNav button{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    color: black;
+    margin-left: 17%;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    border: 0;
+    background-color: transparent; 
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+    text-shadow: 1px 1px 40px;
+
+}
+
+#profileNav button:hover{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    border: 0;
+    background-color: transparent; 
+
+}
+
+#profile {
+
+}
+
+#Miguel {
+    position: absolute;
+    background:rgba(255,255,255,0.8);
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+    box-shadow: 10px 8px 8px -6px;
+}
+    #Miguel img{
+        position: relative;
+        padding-top: 40px;
+        width: 140px;
+        height: 140px;
+    }
+
+#Vincent {
+    position: absolute;
+    background:rgba(255,255,255,0.8);
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 10px 8px 8px -6px;
+}
+
+    #Vincent img{
+        position: relative;
+       
+        padding-top: 10px;  
+        width: 140px;
+        height: 140px;
+
+    }
+
+
+    #Vincent p {
+        padding-top: 20px;
+    }
+#Mustafa {
+    position: absolute;
+    background:rgba(255,255,255,0.8);;
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+}
+
+    
+    #Mustafa img{
+        position: relative;
+
+        width: 140px;
+        height: 140px;
+
+
+    }

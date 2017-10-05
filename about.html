@@ -4,145 +4,80 @@
 	<title>
 		
 	</title>
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-        }
-        h2{
-            color: black;
-            padding-top: 60px;
-            font-family: "Verdana";
-            font-weight: normal;
-            font-size: 70px;
-            padding-left: 10px;
-            background-color: aliceblue;
-        }
-        
-        button {
-            color: black;
-            background: transparent;
-            border-radius: 1000px;
-            outline: none;
-            position: absolute;
-            
-        }
-        
-        
-        
-        .navigation li{
-            font-family: "Helvetica";
-            display: inline-block;
-            list-style-type: none;
-            padding-bottom: 10px;
-        }
-        
-        a{
-            text-decoration: none;
-        }
-        
-        .navigation{
-       
-            position: fixed;
-            background: white;
-            width: 100%;
-            box-shadow: 0 0 10px 0;
-            
-        }
-    
-        
-        .logo {
-            font-family: "Helvetica";
-            padding: 0 555% 0 0;
-        }
-        
-        .companyName {
-            color: black;
-            
-            
-        }
-        
-        #ourImages{
-            margin: 0 auto;
-            top: 20px;
-            position: relative;
-            text-align: center;
-        }
-        
-        #ourImages img{
-            width: 250px;
-            height: 250px;
-            position: absolute;
-        }
-        
-        footer{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            bottom: 0;
-            left: 0;
-            
-        }
-        
-        footer li{
-            padding-bottom:100px; 
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="buber.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class='navigation'>
-		<ul>
-            <p class='logo'><a href=''><img src=''/></a>BUBER</p>
-			<li><a href=''>HOME</a></li>
-			<li><a href='about.html'>ABOUT</a></li>
-			<li><a href=''>SERVICES</a></li>
-			<li><a href=''>CONTACT US</a></li>
-		</ul>
-	</div>
+	<nav class="navigation">
+        <ul>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="home.html">HOME</a></li>
+        </ul>
+    </nav>
 	<h2>
 		ABOUT US
 	</h2>
 
-        <div id='aboutUs'>
-        <table>
-		<div id='ourImages'>
-			<img src='1.png' width='320' height='320'/>
-			<img src='1.jpg' width='320' height='320'/>
-			<img src='2.jpg' width='320' height='320'/>
-
-
-            <button id='prevButton'> <
-			</button>
-
-			<button id='mustafa'> .
-			</button>
-
-			<button id='vincent'> .
-			</button>
-                
-            <button id='miguel'> .
-			</button>
-
-			<button id='nextButton'> >
-			</button>
-        </table>
-		</div>
+    <div id='aboutUs'>
+        <div id='profileNav'>
+            <button id='miguelProf'>Miguel</button>
+            <button id='mustafalProf'>Mustafa</button>
+            <button id='vincentProf'>Vincent</button>
         </div>
+        <div id='profile'>
+            <div id='Miguel'> <!--Miguel's profile -->
+                <img src='1.jpg'/>
+                <p>
+                    I work as the back-end developer in BUBER.
 
-	<footer>
-		<ul>
-			<li>Address</li>
-            <p></p>
-			<li>Contact</li>
-            <p></p>
+                </p>
+            </div>
 
-			<div id='socialMediaIcon'>
-				<li><img src=''/></li>
-				<li><img src=''/></li>	
-				<li><img src=''/></li>
-			</div>
-		</ul>
+            <div id='Vincent'> <!--Vincent's profile -->
+                <img src='2.jpg'/>
+                <p>
+                    I work as the front-end developer in BUBER.
 
-	</footer>
+                </p>
+            </div>
+
+            <div id='Mustafa'> <!--Mustafa's profile -->
+                <img src='1.png'/>
+                <p>
+                    I am the CEO of BUBER. 
+
+
+                </p>
+            </div>
+            
+
+        </div>
+    </div>
+    <script>
+        $(document).ready($('#Miguel').hide(),$('#Mustafa').hide(),$('#Vincent').hide());
+
+        $('#miguelProf').click(function() {
+            $('#Vincent').hide(1000);
+            $('#Miguel').toggle(2000);
+            $('#Mustafa').hide(1000);
+        });
+
+        $('#mustafalProf').click(function() {
+            $('#Vincent').hide(1000);
+            $('#Miguel').hide(1000);
+            $('#Mustafa').toggle(2000);
+        });
+
+        $('#vincentProf').click(function() {
+            $('#Vincent').toggle(2000);
+            $('#Miguel').hide(1000);
+            $('#Mustafa').hide(1000);
+        });
+
+
+
+    </script>
 </body>
 </html>
