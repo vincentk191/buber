@@ -9,7 +9,7 @@
     font-size: 60px;
     top: 15px;
     left: 100px; 
-    z-index: 100;
+    z-index: 1001;
 
 }
 
@@ -42,6 +42,7 @@ body {
     width: 100%;
     opacity: .5;
     box-shadow: 0px 8px 6px -6px;
+    z-index: 1000;
 }
 
 
@@ -60,6 +61,7 @@ body {
         width: 30px;
         height: 30px;
         padding-left: 25%;
+        padding-right: 25%;
         padding-top: 10px;
         padding-bottom: 11px;
 
@@ -79,6 +81,12 @@ body {
     .navigation a:hover {
         background-color: black;
         color: white;
+        transition: 0.5s;
+
+    }
+
+    .navigation img:hover{
+        
     }
 
 
@@ -217,7 +225,7 @@ h2 {
     width: 160px; height: 200px;
     text-align: center;
     margin-top: -92px;
-    z-index: 1000;
+    z-index: -1000000;
   
 }
 
@@ -343,4 +351,45 @@ h2 {
     to { transform: rotateZ(360deg);}
 }
 
+.footer {
+    background: rgba(50,50,50,0.8);
+    position: absolute;  
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;    
+}
 
+#contactInfo {
+    position:relative;
+    margin-left: 20px;
+    width: 50%;
+    bottom:-10px;
+
+}
+
+#addressInfo{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 1000px;
+    float: right;
+    bottom:25px;
+
+}
+
+#socialMedia {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+#socialMedia img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;    
+    opacity: 0.7;
+}

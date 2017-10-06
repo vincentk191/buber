@@ -65,17 +65,36 @@
         </div>
     </div>
 
-
-    <div class='footer'>
+    <div class="footer">
 
         <div id='contactInfo'>
 
+            <p>Contact Info:<br>
+                0821213034<br>
+
+            </p>
+
+
         </div>
+        <div id='addressInfo'>
+            <p>Address 1:<br>
+            Johan Huizingalaan 763A,<br>
+            1066 VH Amsterdam<br>
+            Address 2:<br>
+            John M. Keynesplein 12-46,<br>
+            1066 EP Amsterdam</p>
+
+        </div>
+
         <div id='socialMedia'>
+            <img src="images/facebookLogo.png">
+            <img src="images/gmail.png">
+            <img src="images/linkedin-button.png">
+            <img src="images/twitter-logo-button.png">
 
         </div>
-    </div>
 
+    </div>
     <script>
         $(document).ready($('#Miguel').hide(),$('#Mustafa').hide(),$('#Vincent').hide(), $('#aboutUs').hide().slideDown(1000));
 
@@ -101,8 +120,13 @@
             $('#Mustafa').slideUp(1000);
         });
 
+        $('.navigation li').hover( function() {
+            $(this).find('img').css("filter", "brightness(0) invert(1)");
+        });
 
-
+        $('.navigation li').mouseleave( function() {
+            $(this).find('img').css("filter", "brightness(0) invert(0)");
+        });
     </script>
 </body>
 </html>
