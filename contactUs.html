@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CONTACT US</title>
-</head>
-<link rel="stylesheet" type="text/css" href="buber.css">
-<body>
-    <nav class="navigation">
-        <ul>
-            <li><a href=‘’><img src=‘’/></a></li>
-            <li><a href="contactUs.html">CONTACT US</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="home.html">HOME</a></li>
-        </ul>
-        <hr>
-    </nav>
-    <h2>Address 1:</h2>
-    <h3>Johan Huizingalaan 763A, <br>
-    1066 VH Amsterdam</h3>
-    <h2>Address 2</h2>
-    <h3>John M. Keynesplein 12-46, <br>
-    1066 EP Amsterdam</h3>
-    <div id="map"></div>
+    <head>
+        <title>CONTACT US</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="buber.css">
+       
+    </head>
+    <body>
+        <div class='logo'>
+            <a href="home.html">BUBER</a>
 
-    <script>
-        function initMap (){
-            var location = {lat: -25.363, lng: 131.044};
-            var math = new google.maps.Map(document.getElementById("map"),{
-                zoom: 4,
-                center: location
-            });
-        }
-    </script>
-</body>
-<footer>
-	
-</footer>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="contactUs.html">CONTACT US<img src='images/contactUs.png' width="50px" height="50px"></a></li>
+                <li><a href="about.html">ABOUT<img src='images/about.png'></a></li>
+                <li><a href="services.html">SERVICES<img src='images/services.png'></a></li>
+                <li><a href="home.html">HOME<img src='images/home.png'></a></li>
+            </ul>
+        </nav>
+        <h2>Address 1:<br>
+            Johan Huizingalaan 763A,<br>
+            1066 VH Amsterdam<br>
+            <br><br><br><br><br><br>
+            Address 2:<br>
+            John M. Keynesplein 12-46,<br>
+            1066 EP Amsterdam</h2>
+
+        <div id="map"></div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            function initMap() {
+                var myLatLng = {lat: 52.343079, lng: 4.829259};
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Address'
+                });
+            }
+        </script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUjn3Ps7_v1InHWhNHBNxVPP4PudXiS3Q&callback=initMap"></script>
+        <script>
+            $('document').ready($('h2').hide().slideDown(1000));
+        </script>
+
+    </body>
 </html>

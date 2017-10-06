@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME</title>
+    <title>HOME</title>
 </head>
-<link rel="stylesheet" type="text/css" href="buber.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="buber.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style type="text/css">
+    body {
+        background-image: url(images/dark_tint.png),url(images/backgroundImg.jpg);
+    }
+</style>
 <body>
-    <nav class="navigation0">
+    <section id=“banner”> <!-- Banner stuff starts here  -->
+    </section>
+
+    <div id="home">
+    
+    <nav class="navigation0"> <!-- about bar  -->
         <ul>
             <li><a href="about.html">ABOUT</a></li>
         </ul>
     </nav>
-    <nav class="navigation1">
+
+    <nav class="navigation1"> <!-- services bar  -->
         <ul>
             <li><a href="services.html">SERVICES</a></li>
         </ul>
     </nav>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwniOvWIK9wXvofkR3ur8y6K0pl6o6TxeZlnntlAP77QRDHyKkSQ" alt="some_text" style="width:100px;height:100px";>
-    <h1>BUBER</h1>
-    <nav class="navigation2">
+
+    <div class="tremble">
+       <img src="images/bikeLogo.png" class="tremble">
+   </div>
+
+   <h1>BUBER</h1>
+
+    <nav class="navigation2"> <!-- contact us bar  -->
         <ul>
             <li><a href="contactUs.html">CONTACT US</a></li>
         </ul>
     </nav>
+</div>
+<script>
+        $(document).ready($('.navigation0').hide().fadeIn(1500),$('.navigation1').hide().fadeIn(2000),$('.navigation2').hide().fadeIn(1800), $('h1').hide().fadeIn(1000))
 
+
+
+    </script>
 </body>
 
 </html>

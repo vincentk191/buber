@@ -5,19 +5,28 @@
 		
 	</title>
     <link rel="stylesheet" type="text/css" href="buber.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url(https://media.giphy.com/media/x2T58CTlsRQFa/giphy.gif);
+        }
+    </style>
 </head>
 <body>
+    <div class='logo'>
+       <a href="home.html">BUBER</a>
+
+    </div>
 	<nav class="navigation">
         <ul>
-            <li><a href="contactUs.html">CONTACT US</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="home.html">HOME</a></li>
+            <li><a href="contactUs.html">CONTACT US<img src='images/contactUs.png'></a></li>
+            <li><a href="about.html">ABOUT<img src='images/about.png'></a></li>
+            <li><a href="services.html">SERVICES<img src='images/services.png'></a></li>
+            <li><a href="home.html">HOME<img src='images/home.png'></a></li>
         </ul>
     </nav>
 	<h2>
-		ABOUT US
 	</h2>
 
     <div id='aboutUs'>
@@ -28,7 +37,7 @@
         </div>
         <div id='profile'>
             <div id='Miguel'> <!--Miguel's profile -->
-                <img src='1.jpg'/>
+                <img src='https://media.giphy.com/media/l3vQXYxlQ8czX723C/giphy.gif' style="width:200px; height: 150px;"/>
                 <p>
                     I work as the back-end developer in BUBER.
 
@@ -36,7 +45,7 @@
             </div>
 
             <div id='Vincent'> <!--Vincent's profile -->
-                <img src='2.jpg'/>
+                <img src='https://media.giphy.com/media/7NP9zhkD1CYU0/giphy.gif' style="width:200px; height: 200px;"/>
                 <p>
                     I work as the front-end developer in BUBER.
 
@@ -44,7 +53,7 @@
             </div>
 
             <div id='Mustafa'> <!--Mustafa's profile -->
-                <img src='1.png'/>
+                <img src='images/1.png'/>
                 <p>
                     I am the CEO of BUBER. 
 
@@ -55,25 +64,41 @@
 
         </div>
     </div>
+
+
+    <div class='footer'>
+
+        <div id='contactInfo'>
+
+        </div>
+        <div id='socialMedia'>
+
+        </div>
+    </div>
+
     <script>
-        $(document).ready($('#Miguel').hide(),$('#Mustafa').hide(),$('#Vincent').hide());
+        $(document).ready($('#Miguel').hide(),$('#Mustafa').hide(),$('#Vincent').hide(), $('#aboutUs').hide().slideDown(1000));
+
+        var a = $('#Mustafa').hide();
+        var b = $('#Miguel').hide();
+        var c = $('#Vincent').hide();
 
         $('#miguelProf').click(function() {
-            $('#Vincent').hide(1000);
-            $('#Miguel').toggle(2000);
-            $('#Mustafa').hide(1000);
+            $('#Vincent').slideUp(1000);
+            $('#Miguel').slideToggle(2000);
+            $('#Mustafa').slideUp(1000);
         });
 
         $('#mustafalProf').click(function() {
-            $('#Vincent').hide(1000);
-            $('#Miguel').hide(1000);
-            $('#Mustafa').toggle(2000);
+            $('#Vincent').slideUp(1000);
+            $('#Miguel').slideUp(1000);
+            $('#Mustafa').slideToggle(2000);
         });
 
         $('#vincentProf').click(function() {
-            $('#Vincent').toggle(2000);
-            $('#Miguel').hide(1000);
-            $('#Mustafa').hide(1000);
+            $('#Vincent').slideToggle(2000);
+            $('#Miguel').slideUp(1000);
+            $('#Mustafa').slideUp(1000);
         });
 
 
