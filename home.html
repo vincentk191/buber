@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HOME</title>
-</head>
+    <title>Home || BUBER</title>
+    </head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="buber.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="buber.css">
+    <style type="text/css">
+        body {
+            background-image: url(images/dark_tint.png),url(images/backgroundImg.jpg);
+        }
+    </style>
+    <body>
+        <section id=“banner”> <!-- Banner stuff starts here  -->
+        </section>
 
-<a id="rotator" title="CSS Rotate Image">
-<img alt="" src="rotator.png">
-</a>
+        <div id="home">
+        
+        <nav class="navigation0"> <!-- about bar  -->
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
 
-<body>
-    <section id=“banner”> <!-- Banner stuff starts here  -->
-    </section>
+        <nav class="navigation1"> <!-- services bar  -->
+            <ul>
+                <li><a href="services.html">SERVICES</a></li>
+            </ul>
+        </nav>
 
-    <div id="home">
-    
-    <nav class="navigation0"> <!-- about bar  -->
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
+        <div class="tremble">
+           <img src="images/bikeLogo.png" class="tremble">
+       </div>
 
-    <nav class="navigation1"> <!-- services bar  -->
-        <ul>
-            <li><a href="services.html">SERVICES</a></li>
-        </ul>
-    </nav>
+       <h1>BUBER</h1>
 
-    <div class="tremble">
-       <img src="E:/Desktop/BUBER/bike-25-512.png" class="tremble">
-   </div>
+        <nav class="navigation2"> <!-- contact us bar  -->
+            <ul>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+        <script>
+            $(document).ready($('.navigation0').hide().fadeIn(1500),$('.navigation1').hide().fadeIn(2000),$('.navigation2').hide().fadeIn(1800), $('h1').hide().fadeIn(1000))
 
-   <h1>BUBER</h1>
+            $('.navigation li').hover( function() {
+                $(this).find('img').css("filter", "brightness(0) invert(1)");
+            });
 
-    <nav class="navigation2"> <!-- contact us bar  -->
-        <ul>
-            <li><a href="contactUs.html">CONTACT US</a></li>
-        </ul>
-    </nav>
-</div>
-</body>
+            $('.navigation li').mouseleave( function() {
+                $(this).find('img').css("filter", "brightness(0) invert(0)");
+            });
+
+        </script>
+    </body>
 
 </html>
