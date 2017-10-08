@@ -2,58 +2,58 @@
 <html>
 <head>
     <title>Home || BUBER</title>
-</head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="buber.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="buber.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<style type="text/css">
-    body {
-        background-image: url(images/dark_tint.png),url(images/backgroundImg.jpg);
-    }
-</style>
-<body>
-    <section id=“banner”> <!-- Banner stuff starts here  -->
-    </section>
+    <style type="text/css">
+        body {
+            background-image: url(images/dark_tint.png),url(images/backgroundImg.jpg);
+        }
+    </style>
+    <body>
+        <section id=“banner”> <!-- Banner stuff starts here  -->
+        </section>
 
-    <div id="home">
-    
-    <nav class="navigation0"> <!-- about bar  -->
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
+        <div id="home">
+        
+        <nav class="navigation0"> <!-- about bar  -->
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
 
-    <nav class="navigation1"> <!-- services bar  -->
-        <ul>
-            <li><a href="services.html">SERVICES</a></li>
-        </ul>
-    </nav>
+        <nav class="navigation1"> <!-- services bar  -->
+            <ul>
+                <li><a href="services.html">SERVICES</a></li>
+            </ul>
+        </nav>
 
-    <div class="tremble">
-       <img src="images/bikeLogo.png" class="tremble">
-   </div>
+        <div class="tremble">
+           <img src="images/bikeLogo.png" class="tremble">
+       </div>
 
-   <h1>BUBER</h1>
+       <h1>BUBER</h1>
 
-    <nav class="navigation2"> <!-- contact us bar  -->
-        <ul>
-            <li><a href="contactUs.html">CONTACT US</a></li>
-        </ul>
-    </nav>
-</div>
-    <script>
-        $(document).ready($('.navigation0').hide().fadeIn(1500),$('.navigation1').hide().fadeIn(2000),$('.navigation2').hide().fadeIn(1800), $('h1').hide().fadeIn(1000))
+        <nav class="navigation2"> <!-- contact us bar  -->
+            <ul>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+        <script>
+            $(document).ready($('.navigation0').hide().fadeIn(1500),$('.navigation1').hide().fadeIn(2000),$('.navigation2').hide().fadeIn(1800), $('h1').hide().fadeIn(1000))
 
-        $('.navigation li').hover( function() {
-            $(this).find('img').css("filter", "brightness(0) invert(1)");
-        });
+            $('.navigation li').hover( function() {
+                $(this).find('img').css("filter", "brightness(0) invert(1)");
+            });
 
-        $('.navigation li').mouseleave( function() {
-            $(this).find('img').css("filter", "brightness(0) invert(0)");
-        });
+            $('.navigation li').mouseleave( function() {
+                $(this).find('img').css("filter", "brightness(0) invert(0)");
+            });
 
-    </script>
-</body>
+        </script>
+    </body>
 
 </html>
