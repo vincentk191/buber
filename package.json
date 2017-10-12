@@ -1,0 +1,23 @@
+{
+  "name": "buber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vincentk191/buber.git"
+  },
+  "author": "Vincent. K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentk191/buber/issues"
+  },
+  "homepage": "https://github.com/vincentk191/buber#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
