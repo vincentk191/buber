@@ -7,27 +7,27 @@ app.use(express.static(path.join(__dirname + '/public/css')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',function(request,response){
-	response.sendFile(path.resolve('/public/home.html'));
+	response.sendFile(path.resolve('./public/home.html'));
 
 });
 
-app.get('/home.html',function(request,response){
-	response.sendFile(path.resolve('/public/home.html'));
+app.get('/home',function(request,response){
+	response.sendFile(path.resolve('./public/home.html'));
 
 });
 
-app.get('/contactUs.html',function(request,response){
-	response.sendFile(path.resolve('/public/contactUs.html'));
+app.get('/contactUs',function(request,response){
+	response.sendFile(path.resolve('./public/contactUs.html'));
 
 });
 
-app.get('/about.html',function(request,response){
-	response.sendFile(path.resolve('/public/about.html'));
+app.get('/about',function(request,response){
+	response.sendFile(path.resolve('./public/about.html'));
 
 });
 
-app.get('/services.html',function(request,response){
-	response.sendFile(path.resolve('/public/services.html'));
+app.get('/services',function(request,response){
+	response.sendFile(path.resolve('./public/services.html'));
 
 });
 
