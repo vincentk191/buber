@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url(dark_tint.png), url(https://media.giphy.com/media/F3x1kpXxPi64M/giphy.gif);
+  background-size: cover;
+  font-family:  "HelveticaNeue-Light";
+  font-weight: 100;
+  color: black;
+  margin-left: 100;
+  padding-left: 40;
+}
+
+.logo{
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    top: 15px;
+    left: 100px; 
+    z-index: 1001;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover {
+    color: rgba(100,100,100,1);
+    font-family: 'Roboto', sans-serif;  
+    border: 0;
+    background-color: transparent; 
+    transition: all 0.5s;
+    text-shadow: 1px 1px 40px;
+}
+
+
+/* Navigation Bar */
+.navigation { 
+    position: fixed;
+    background-color: white;
+    float: right;
+    width: 100%;
+    opacity: .5;
+    box-shadow: 0px 8px 6px -6px;
+    z-index: 1000;
+}
+
+
+    .navigation li{
+        display: inline;
+        margin-right: 20px;
+        float: right;
+        color: black;
+        position: relative;
+        height: 90px;
+        
+    }
+
+    .navigation img {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 10px;
+        padding-bottom: 11px;
+
+    }
+
+    .navigation a {
+        display: inline-grid;
+        text-align: center;
+        color: black;
+        padding: 10px 30px;
+        text-decoration: none;
+        padding-top: -50px;
+
+    }
+
+
+    .navigation a:hover {
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+
+    }
+
+    .navigation img:hover{
+        
+    }
+
+
+/*about nav bar*/
+.navigation0 { 
+    font: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 200px;
+    height: 50px;
+}
+
+.navigation0 a:hover {
+        background-color: black;
+        color: white;
+    }
+
+
+/*Home services bar*/
+.navigation1{
+    font: bold;
+    font-size: 28px;
+    position: absolute;
+    top: 200px;
+    left: 980px;
+    width: 200px;
+    height: 50px;
+}
+
+.navigation1 a:hover {
+        background-color: black;
+        color: white;
+    }
+
+/*Home contact us bar*/
+.navigation2 {
+    font: bold;
+    font-size: 28px;
+    position: absolute;
+    bottom: 125px;
+    left: 460px;
+    width: 200px;
+    height: 50px;
+}
+
+.navigation2 a:hover {
+        background-color: black;
+        color: white;
+    }
+
+/*BUBER*/
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 420px;
+    left: 43%;
+    width: 200px;
+    height: 50px;
+}
+
+h1:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+/*ADDRESS - CONTACT US*/
+h2 {
+    text-align: left;
+    top: 150px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border-top: 200px;  
+    padding-top: 180px;
+    padding-left: 100px;
+    text-shadow: 1px 1px 40px;
+}
+
+
+#home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    padding-bottom: 15px;
+    width: 300px;
+}
+
+
+#home ul li {
+    float: right;
+    width: 300px;
+    height: 40px;
+    opacity: .8;
+    color: black;
+    text-align: center;
+}
+
+#home li a {
+    display: inline-grid;   
+    text-align: center;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+#home a:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+.active {
+    background-color: white;
+       color: white;
+       padding: 0 0 0 0;
+}
+
+
+#map {
+    height: 400px;
+    width: 40%;
+    margin-left: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 150px;
+}
+
+/*About us*/
+#aboutUs {
+    background:rgba(100,100,100,0.5);;
+    box-shadow: 10px 8px 8px -6px;
+    width: 160px; height: 200px;
+    text-align: center;
+    margin-top: -92px;
+    z-index: -1000000;
+  
+}
+
+#profileNav {
+    padding-top: 10px;
+    position: relative;
+
+}
+
+#profileNav button{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    color: black;
+    margin-left: 17%;  
+    font-family: 'Roboto',sans-serif;
+    font-weight: lighter;
+    font-size: 20px;    
+    border: 0;
+    background-color: transparent; 
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+    text-shadow: 1px 1px 40px;
+
+
+}
+
+#profileNav button:hover{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    border: 0;
+    background-color: transparent; 
+
+}
+
+#profile {
+
+}
+
+#Miguel {
+    position: absolute;
+    background:rgba(100,100,100,0.8);
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+    box-shadow: 10px 8px 8px -6px;
+}
+    #Miguel img{
+        position: relative;
+        padding-top: 40px;
+        width: 140px;
+        height: 140px;
+    }
+
+#Vincent {
+    position: absolute;
+    background:rgba(100,100,100,0.8);
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 10px 8px 8px -6px;
+}
+
+    #Vincent img{
+        position: relative;
+       
+        padding-top: 10px;  
+        width: 140px;
+        height: 140px;
+
+    }
+
+
+    #Vincent p {
+        padding-top: 20px;
+    }
+#Mustafa {
+    position: absolute;
+    background:rgba(100,100,100,0.8);;
+    top: 18%;
+    left: 45%;
+    width: 300px;
+    height: 500px;
+}
+
+    
+    #Mustafa img{
+        position: relative;
+
+        width: 140px;
+        height: 140px;
+
+
+    }
+
+
+
+/*ICON ROTATION FX*/
+.tremble{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 120px;
+   height: 120px;
+   margin:-60px 0 0 -60px;
+}
+
+
+.tremble img{
+    -webkit-animation: mymove 1s infinite;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from   {    transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg);}
+}
+
+.footer {
+    background: rgba(50,50,50,0.8);
+    position: fixed;  
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;    
+}
+
+#contactInfo {
+    position:relative;
+    margin-left: 20px;
+    width: 50%;
+    bottom:-10px;
+
+}
+
+#addressInfo{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 1000px;
+    float: right;
+    bottom:25px;
+
+}
+
+#socialMedia {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+#socialMedia img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;    
+    opacity: 0.7;
+}
+
+
+
+
+/*Services stuff starts here*/
+#banner {
+    background-image: url(images/dark_tint.png), url(images/bakfiets.jpg);
+    background-position: center ;
+    background-size: cover;
+    color: #ffffff;
+    padding: 14em 0em 14em;
+    text-align: center;
+    font-family: "Helvetica Neue";
+
+  }
+
+   
+  #banner h3 {
+      color: #ffffff;
+      font-size: 4em;
+      line-height: 0.15em;
+      margin: 0 0 0.5em 0;
+      padding: 0;
+      font-weight: 200;
+      text-align:  center;
+
+  }
+
+    #banner p {
+      color: #ffffff;
+      font-size: 2em;
+      line-height: 1.25em;
+      margin: 0 0 0.5em 0;
+      padding: 0;
+      font-weight: 20;
+    }
+
+
+
+#content1 {
+  
+  width: 100%;
+  height: 850px;
+ 
+}
+
+
+
+#iphone1 {
+width: 34%;
+float: left;
+display: block;
+
+}
+
+
+#icons1 {
+width: 50%;
+text-align: left;
+
+display: block;
+
+}
+
+
+
+#text1 {
+
+font-size: 20px; 
+float: right;
+width: 50%  ;
+text-align: center;
+position: relative;
+bottom:608px;
+display: block;
+
+}
+
+
+#text1-1 {
+  margin-top: 90px ;
+}
+
+#text1-2 {
+  margin-top: 85px ;
+}
+
+#text1-3 {
+  margin-top: 115px ;
+}
+
+
+
+
+
+
+#heading2 {
+  display: inline-block;
+  width: 100%;
+ text-align: center;
+ font-weight: lighter;
+ margin: 60px 0 6	0px;
+
+}
+
+#badges {
+width: 10px;
+line-height:10px;
+
+
+}
+
+#downloadtekst {
+  text-align: center;
+}
+
+
+#downloadicons {
+  display: inline-block;
+}
+
+
+
+/* Download Apps Section */
+#download-section {  
+text-align: center;
+position: relative;
+width: 100%;
+   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align:  center;
+
+
+
+}
+
+
+
+
+h3{
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+
+/*Contactu us form*/
+#contactus {
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 280px;
+  height: 100px;
+
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+
+  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+    background-color: #red;
+}
+
+#contactus {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  
+}
+/*Services stuff ends here*/
+
+
+
+
+
+/*animation stuff begins here*/
+.hover01  img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 img:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(0.9);
+	z-index: 1;
+}
+/*animation stuff ends here*/
+

@@ -1,0 +1,215 @@
+/*Page paylout*/
+body {
+  
+  font-family:  "HelveticaNeue-Light";
+  font-weight: 100;
+  color: #44484f;
+}
+
+h1, h2 {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  line-height: 1.5;
+  text-align:  center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 60px;
+
+}
+
+
+
+
+
+/*Menu list elements*/
+li{
+  display: inline;
+  margin-right: 20px;
+  float: right;
+}
+
+
+/*Menu list*/
+ul {
+      position: fixed;
+}
+
+
+#content1 {
+  
+  width: 100%;
+  height: 750px;
+ 
+}
+
+
+
+#iphone1 {
+width: 34%;
+float: left;
+display: block;
+
+}
+
+
+#icons1 {
+width: 50%;
+text-align: left;
+
+display: block;
+
+}
+
+
+
+#text1 {
+
+font-size: 20px; 
+float: right;
+width: 50%  ;
+text-align: center;
+position: relative;
+bottom:608px;
+display: block;
+
+}
+
+
+#text1-1 {
+  margin-top: 90px ;
+}
+
+#text1-2 {
+  margin-top: 85px ;
+}
+
+#text1-3 {
+  margin-top: 115px ;
+}
+
+
+
+
+
+
+#heading2 h2{
+  display: inline-block;
+  width: 100%;
+ text-align: center;
+}
+
+#badges {
+width: 10px;
+line-height:10px;
+
+
+}
+
+#downloadtekst {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#downloadicons {
+  margin-bottom: 100px;
+}
+
+
+
+/* Download Apps Section */
+#download-section {  
+text-align: center;
+position: relative;
+width: 100%:;
+
+}
+
+
+
+/*COPIED*/
+/*Banner stuff*/
+  #banner {
+    background-image: url(images/dark_tint.png), url(images/bakfiets.jpg);
+    background-position: center ;
+    background-size: cover;
+    color: #ffffff;
+    padding: 14em 0em 14em;
+    text-align: center;
+    font-family: "Helvetica Neue";
+
+  }
+
+   
+  #banner h2 {
+      color: #ffffff;
+      font-size: 4em;
+      line-height: 0.15em;
+      margin: 0 0 0.5em 0;
+      padding: 0;
+      font-weight: 200;
+
+  }
+
+    #banner p {
+      color: #ffffff;
+      font-size: 2em;
+      line-height: 1.25em;
+      margin: 0 0 0.5em 0;
+      padding: 0;
+      font-weight: 20;
+    }
+/*COPIED*/
+
+
+
+
+
+
+
+/*contact us*/
+
+
+#contactus {
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 100px;
+
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+
+  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+    background-color: #red;
+}
+
+#contactus {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  
+}
+
+
+
+
+

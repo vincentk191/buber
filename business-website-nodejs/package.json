@@ -1,0 +1,22 @@
+{
+  "name": "business-website-nodejs",
+  "version": "1.0.0",
+  "description": "Business website running on node.JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlassi/business-website-nodejs.git"
+  },
+  "author": "M. el Ouali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlassi/business-website-nodejs/issues"
+  },
+  "homepage": "https://github.com/atlassi/business-website-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

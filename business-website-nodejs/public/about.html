@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Home || BUBER
+	</title>
+    <link rel="stylesheet" type="text/css" href="buber.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url(https://media.giphy.com/media/x2T58CTlsRQFa/giphy.gif);
+        }
+    </style>
+</head>
+<body>
+    <div class='logo'>
+       <a href="home.html">BUBER</a>
+
+    </div>
+	<nav class="navigation">
+        <ul>
+            <li><a href="contactUs.html">CONTACT US<img src='images/contactUs.png'></a></li>
+            <li><a href="about.html">ABOUT<img src='images/about.png'></a></li>
+            <li><a href="services.html">SERVICES<img src='images/services.png'></a></li>
+            <li><a href="home.html">HOME<img src='images/home.png'></a></li>
+        </ul>
+    </nav>
+	<h2>
+	</h2>
+
+    <div id='aboutUs'>
+        <div id='profileNav'>
+            <button id='miguelProf'>Miguel</button>
+            <button id='mustafalProf'>Mustafa</button>
+            <button id='vincentProf'>Vincent</button>
+        </div>
+        <div id='profile'>
+            <div id='Miguel'> <!--Miguel's profile -->
+                <img src='https://media.giphy.com/media/l3vQXYxlQ8czX723C/giphy.gif' style="width:200px; height: 150px;"/>
+                <p>
+                    I work as the back-end developer in BUBER.
+
+                </p>
+            </div>
+
+            <div id='Vincent'> <!--Vincent's profile -->
+                <img src='https://media.giphy.com/media/7NP9zhkD1CYU0/giphy.gif' style="width:200px; height: 200px;"/>
+                <p>
+                    I work as the front-end developer in BUBER.
+
+                </p>
+            </div>
+
+            <div id='Mustafa'> <!--Mustafa's profile -->
+                <img src='images/1.png'/>
+                <p>
+                    I am the CEO of BUBER. 
+
+
+                </p>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div id='contactInfo'>
+
+            <p>Contact Info:<br>
+                0821213034<br>
+
+            </p>
+
+
+        </div>
+        <div id='addressInfo'>
+            <p>Address 1:<br>
+            Johan Huizingalaan 763A,<br>
+            1066 VH Amsterdam<br>
+            Address 2:<br>
+            John M. Keynesplein 12-46,<br>
+            1066 EP Amsterdam</p>
+
+        </div>
+
+        <div id='socialMedia'>
+            <img src="images/facebookLogo.png">
+            <img src="images/gmail.png">
+            <img src="images/linkedin-button.png">
+            <img src="images/twitter-logo-button.png">
+
+        </div>
+
+    </div>
+    <script>
+        $(document).ready($('#Miguel').hide(),$('#Mustafa').hide(),$('#Vincent').hide(), $('#aboutUs').hide().slideDown(1000));
+
+        var a = $('#Mustafa').hide();
+        var b = $('#Miguel').hide();
+        var c = $('#Vincent').hide();
+
+        $('#miguelProf').click(function() {
+            $('#Vincent').slideUp(1000);
+            $('#Miguel').slideToggle(2000);
+            $('#Mustafa').slideUp(1000);
+        });
+
+        $('#mustafalProf').click(function() {
+            $('#Vincent').slideUp(1000);
+            $('#Miguel').slideUp(1000);
+            $('#Mustafa').slideToggle(2000);
+        });
+
+        $('#vincentProf').click(function() {
+            $('#Vincent').slideToggle(2000);
+            $('#Miguel').slideUp(1000);
+            $('#Mustafa').slideUp(1000);
+        });
+
+        $('.navigation li').hover( function() {
+            $(this).find('img').css("filter", "brightness(0) invert(1)");
+        });
+
+        $('.navigation li').mouseleave( function() {
+            $(this).find('img').css("filter", "brightness(0) invert(0)");
+        });
+    </script>
+</body>
+</html>
